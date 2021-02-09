@@ -5,12 +5,13 @@ used to represent helioseismic split frequencies using a-coefficients.
 ### Installing the package
 * Clone the repository ritzLavelyPy into local working directory.
 ``` bash
-git clone ritzLavelyPy.git
+cd /local/working/dir/
+git clone https://github.com/samarth-kashyap/ritzLavelyPy.git
 ```
 * Enter the cloned directory
 
 ``` bash
-cd ritzLavelyPy
+cd /local/working/dir/ritzLavelyPy
 ```
 * Install the python package
 ```
