@@ -9,7 +9,7 @@ import numpy.polynomial.legendre as npleg
 NAX = np.newaxis
 
 class ritzLavelyPoly():
-"""Class to handle Ritzwoller-Lavely polynomials and coefficients.
+    """Class to handle Ritzwoller-Lavely polynomials and coefficients.
 
     Attributes:
     ------------
@@ -52,25 +52,22 @@ class ritzLavelyPoly():
         self.L = np.sqrt(ell*(ell+1))
         self.m_by_L = self.m/self.L
         self.Pjl = np.zeros((self.jmax, len(self.m)), dtype=np.float64)
-        self.Pjl_exists = False
+        print(f"Generating the Ritzwoller-Lavely polynomials for " +
+              f"ell = {ell} and jmax = {jmax}")
+        self.get_Pjl()
 
     def get_Pjl(self):
         """Computes the Ritzwoller-Lavely polynomials for given ell and jmax"""
-        if self.Pjl_exists:
-            print('Ritzwoller-Lavely polynomials already computed')
-            return self.Pjl
-        else:
-            self.Pjl[0, :] += self.ell
-            self.Pjl[1, :] += self.m
-            for j in range(2, self.jmax):
-                coeffs = np.zeros(j+1)
-                coeffs[-1] = 1.0
-                P2j = self.L * npleg.legval(self.m_by_L, coeffs)
-                cj = self.Pjl[:j, :] @ P2j / (self.Pjl[:j, :]**2).sum(axis=1)
-                P1j = P2j - (cj[:, NAX] * self.Pjl[:j, :]).sum(axis=0)
-                self.Pjl[j, :] += self.ell * P1j/P1j[-1]
-            self.Pjl_exists = True
-            return self.Pjl
+        self.Pjl[0, :] += self.ell
+        self.Pjl[1, :] += self.m
+        for j in range(2, self.jmax):
+            coeffs = np.zeros(j+1)
+            coeffs[-1] = 1.0
+            P2j = self.L * npleg.legval(self.m_by_L, coeffs)
+            cj = self.Pjl[:j, :] @ P2j / (self.Pjl[:j, :]**2).sum(axis=1)
+            P1j = P2j - (cj[:, NAX] * self.Pjl[:j, :]).sum(axis=0)
+            self.Pjl[j, :] += self.ell * P1j/P1j[-1]
+        return self.Pjl
 
     def get_coeffs(self, arrm):
         """Decomposition of input array into Ritzwoller-Lavely coefficients.
@@ -85,8 +82,6 @@ class ritzLavelyPoly():
         aj - np.ndarray(ndim=1, dtype=float)
             Ritzwoller-Lavely coefficients
         """
-        if not self.Pjl_exists:
-            self.get_Pjl()
         assert len(arrm) == len(self.m), "Length of input array =/= 2*ell+1"
         aj = (self.Pjl @ arrm) / np.diag(self.Pjl @ self.Pjl.T)
         return aj
