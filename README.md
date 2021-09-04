@@ -15,6 +15,6 @@ cd /local/working/dir/ritzLavelyPy
 ```
 * Install the python package
 ```
-pip install .
+pip install -e .
 ```  
 * Start using ritzLavelyPy.
