@@ -2,6 +2,8 @@
 A package to handle Ritzwoller-Lavely polynomials [(Ritzwoller & Lavely, 1991)](https://ui.adsabs.harvard.edu/abs/1991ApJ...369..557R/abstract)
 used to represent helioseismic split frequencies using a-coefficients.
 
+Documentation can be found here. [(link)](https://samarth-kashyap.github.io/ritzLavelyPy/)
+
 ### Installing the package
 * Clone the repository ritzLavelyPy into local working directory.
 ``` bash
