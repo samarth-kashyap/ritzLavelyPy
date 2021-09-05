@@ -6,6 +6,9 @@ import numpy as np
 import scipy.special as special
 import numpy.polynomial.legendre as npleg
 
+__author__ = "Samarth G Kashyap"
+__all__ = "ritzLavelyPoly"
+
 NAX = np.newaxis
 
 class ritzLavelyPoly():
