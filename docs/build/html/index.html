@@ -1,0 +1,273 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Welcome to ritzLavelyPy’s documentation! &mdash; ritzLavelyPy 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> ritzLavelyPy
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Welcome to ritzLavelyPy’s documentation!</a><ul>
+<li><a class="reference internal" href="#module-ritzLavelyPy.rlclass">Ritzwoller-Lavely polynomials</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">ritzLavelyPy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>Welcome to ritzLavelyPy’s documentation!</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="welcome-to-ritzlavelypy-s-documentation">
+<h1>Welcome to ritzLavelyPy’s documentation!<a class="headerlink" href="#welcome-to-ritzlavelypy-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<section id="module-ritzLavelyPy.rlclass">
+<span id="ritzwoller-lavely-polynomials"></span><h2>Ritzwoller-Lavely polynomials<a class="headerlink" href="#module-ritzLavelyPy.rlclass" title="Permalink to this headline">¶</a></h2>
+<p>Module to handle decomposition of functions in terms of
+Ritzwoller-Lavely polynomials (Ritzwoller &amp; Lavely, 1991) and
+reconstruction of functions from the Ritzwoller-Lavely coefficients.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="ritzLavelyPy.rlclass.ritzLavelyPoly">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">ritzLavelyPy.rlclass.</span></span><span class="sig-name descname"><span class="pre">ritzLavelyPoly</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ell</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jmax</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ritzLavelyPy/rlclass.html#ritzLavelyPoly"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ritzLavelyPy.rlclass.ritzLavelyPoly" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class to handle Ritzwoller-Lavely polynomials and coefficients.</p>
+<blockquote>
+<div><dl class="simple">
+<dt>ell - int</dt><dd><p>The spherical harmonic degree</p>
+</dd>
+<dt>jmax - int</dt><dd><p>The maximum order of polynomial</p>
+</dd>
+<dt>m - np.ndarray(ndim=1, dtype=int)</dt><dd><p>Array containing azimuthal order (-ell, -ell+1, …, ell-1, ell)</p>
+</dd>
+<dt>L - float</dt><dd><p>sqrt(ell*(ell+1))</p>
+</dd>
+<dt>m_by_L - np.ndarray(ndim=1, dtype=float)</dt><dd><p>m/L</p>
+</dd>
+<dt>Pjl - np.ndarray(ndim=1, dtype=float)</dt><dd><p>Ritzwoller-Lavely polynomials
+axis=0 : polynomial order
+axis=1 : azimuthal order m</p>
+</dd>
+<dt>Pjl_exists - bool</dt><dd><p>flag to check if polynomials are already computed</p>
+</dd>
+</dl>
+</div></blockquote>
+<blockquote>
+<div><p>get_Pjl - computes Ritzwoller-Lavely polynomials
+get_coeffs - computes Ritzwoller-Lavely coefficients of a given function
+polyval - uses Ritzwoller-Lavely coefficients to compute the function</p>
+</div></blockquote>
+<p>Class instance initializer</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ritzLavelyPy.rlclass.ritzLavelyPoly.get_Pjl">
+<span class="sig-name descname"><span class="pre">get_Pjl</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ritzLavelyPy/rlclass.html#ritzLavelyPoly.get_Pjl"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ritzLavelyPy.rlclass.ritzLavelyPoly.get_Pjl" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the Ritzwoller-Lavely polynomials for given ell and jmax</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ritzLavelyPy.rlclass.ritzLavelyPoly.get_coeffs">
+<span class="sig-name descname"><span class="pre">get_coeffs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arrm</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ritzLavelyPy/rlclass.html#ritzLavelyPoly.get_coeffs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ritzLavelyPy.rlclass.ritzLavelyPoly.get_coeffs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decomposition of input array into Ritzwoller-Lavely coefficients.</p>
+<dl class="simple">
+<dt>arrm - np.ndarray(ndim=1, dtype=float)</dt><dd><p>array that needs to be decomposed</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>aj - np.ndarray(ndim=1, dtype=float)</dt><dd><p>Ritzwoller-Lavely coefficients</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ritzLavelyPy.rlclass.ritzLavelyPoly.polyval">
+<span class="sig-name descname"><span class="pre">polyval</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">acoeffs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ritzLavelyPy/rlclass.html#ritzLavelyPoly.polyval"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ritzLavelyPy.rlclass.ritzLavelyPoly.polyval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reconstruction of function from the Ritzwoller-Lavely coefficients.</p>
+<dl class="simple">
+<dt>acoeffs - np.ndarray(ndim=1, dtype=float)</dt><dd><p>the array containing Ritzwoller-Lavely coefficients</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>sum(acoeffs * Pjl) - np.ndarray(ndim=1, dtype=float)</dt><dd><p>the reconstructed function</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2021, Samarth G Kashyap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
