@@ -5,8 +5,7 @@ ritzLavelyPy - a Python package for handling Ritzwoller-Lavely polynomials
 :copyright:
     Samarth G. Kashyap (g.samarth@tifr.res.in), 2021
 :license:
-    GNU Lesser General Public License, Version 3
-    (http://www.gnu.org/copyleft/lgpl.html)
+    MIT License
 '''
 # Importing setuptools monkeypatches some of distutils commands so things like
 # 'python setup.py develop' work. Wrap in try/except so it is not an actual
