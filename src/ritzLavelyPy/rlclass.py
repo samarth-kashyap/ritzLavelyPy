@@ -54,13 +54,14 @@ class ritzLavelyPoly():
         self.m = np.arange(-ell, ell+1) * 1.0
         self.L = np.sqrt(ell*(ell+1))
         self.m_by_L = self.m/self.L
-        self.Pjl = np.zeros((self.jmax, len(self.m)), dtype=np.float64)
+        self.Pjl = None
         print(f"Generating the Ritzwoller-Lavely polynomials for " +
               f"ell = {ell} and jmax = {jmax}")
         self.get_Pjl()
 
     def get_Pjl(self):
         """Computes the Ritzwoller-Lavely polynomials for given ell and jmax"""
+        self.Pjl = np.zeros((self.jmax, len(self.m)), dtype=np.float64)
         self.Pjl[0, :] += self.ell
         self.Pjl[1, :] += self.m
         for j in range(2, self.jmax):
