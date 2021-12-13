@@ -20,3 +20,24 @@ cd /local/working/dir/ritzLavelyPy
 pip install -e .
 ```  
 * Start using ritzLavelyPy.
+
+
+### Using the package
+
+```python
+from ritzLavelyPy import ritzLavelyPoly
+ell, jmax = 100, 5 #defining ell and max-degree
+RLP = ritzLavelyPoly(ell, jmax)
+
+# generating Ritzwoller-Lavely polynomials
+Pjl = RLP.get_Pjl() # the Ritzwoller-Lavely polynomials
+
+# Decomposition of the given array (function of m)
+# into Ritzwoller-Lavely polynomials
+alm = np.load('alm.npy')
+ritz_coeffs = RLP.get_coeffs(alm)
+
+# Polynomial expansion using coefficients
+alm_from_coeffs = RLP.polyval(ritz_coeffs)
+```
+
