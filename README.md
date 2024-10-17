@@ -41,3 +41,27 @@ ritz_coeffs = RLP.get_coeffs(alm)
 alm_from_coeffs = RLP.polyval(ritz_coeffs)
 ```
 
+### Citing the package
+This package was created as a part of the study [Kashyap+(2021)](https://ui.adsabs.harvard.edu/abs/2021ApJS..253...47K/abstract). Please cite the paper as follows:
+
+```
+@ARTICLE{Kashyap-2021-ApJS,
+       author = {{Kashyap}, Samarth G. and {Das}, Srijan Bharati and {Hanasoge}, Shravan M. and {Woodard}, Martin F. and {Tromp}, Jeroen},
+        title = "{Inferring Solar Differential Rotation through Normal-mode Coupling Using Bayesian Statistics}",
+      journal = {\apjs},
+     keywords = {Helioseismology, Solar oscillations, Solar differential rotation, Markov chain Monte Carlo, 709, 1515, 1996, 1889, Astrophysics - Solar and Stellar Astrophysics},
+         year = 2021,
+        month = apr,
+       volume = {253},
+       number = {2},
+          eid = {47},
+        pages = {47},
+          doi = {10.3847/1538-4365/abdf5e},
+archivePrefix = {arXiv},
+       eprint = {2101.08933},
+ primaryClass = {astro-ph.SR},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2021ApJS..253...47K},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+```
+
