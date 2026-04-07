@@ -44,9 +44,11 @@ RLP = ritzLavelyPoly(ell, jmax)
 # generating Ritzwoller-Lavely polynomials
 Pjl = RLP.get_Pjl() # the Ritzwoller-Lavely polynomials
 
-# Decomposition of the given array (function of m)
-# into Ritzwoller-Lavely polynomials
-alm = np.load('alm.npy')
+# Create a sample function of m with length 2*ell + 1
+m = np.arange(-ell, ell + 1)
+alm = 0.5 + 0.01 * m - 2e-4 * m**3
+
+# Decomposition of the array into Ritzwoller-Lavely polynomials
 ritz_coeffs = RLP.get_coeffs(alm)
 
 # Polynomial expansion using coefficients
