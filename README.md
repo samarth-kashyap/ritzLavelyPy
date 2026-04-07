@@ -15,17 +15,29 @@ git clone https://github.com/samarth-kashyap/ritzLavelyPy.git
 ``` bash
 cd /local/working/dir/ritzLavelyPy
 ```
-* Install the python package
+* Create the local environment and install the package with `uv`
 ```
-pip install -e .
+uv sync --dev
 ```  
-* Start using ritzLavelyPy.
+* Start using ritzLavelyPy from the managed environment.
+
+``` bash
+uv run python
+```
+
+### Running tests
+
+``` bash
+uv run pytest
+```
 
 
 ### Using the package
 
 ```python
-from ritzLavelyPy import ritzLavelyPoly
+from ritzLavelyPy.rlclass import ritzLavelyPoly
+import numpy as np
+
 ell, jmax = 100, 5 #defining ell and max-degree
 RLP = ritzLavelyPoly(ell, jmax)
 
@@ -64,4 +76,3 @@ archivePrefix = {arXiv},
       adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 ```
-
